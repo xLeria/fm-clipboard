@@ -39,6 +39,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   background-image: url("../images/bg-header-mobile.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -46,4 +47,10 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   color: rgb(159, 171, 178);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../images/bg-header-desktop.png");
+  }
 }/*# sourceMappingURL=main.css.map */
