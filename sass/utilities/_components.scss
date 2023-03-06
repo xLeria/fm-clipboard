@@ -43,6 +43,24 @@
 	}
 }
 
+.section {
+	padding: 1.8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	&__title {
+        color: $dark-grayish-blue;
+        font-size: 2.7rem;
+	}
+    &__info{
+        max-width: 700px;
+		padding: 1em 0;
+		font-size: 1.6rem;
+		line-height: 1.5em;
+    }
+}
+
 @media (min-width: 576px) {
 	.download {
 		flex-direction: row;
@@ -50,6 +68,23 @@
 
 		&__btn {
 			padding: 0.9em 2em;
+		}
+	}
+
+	.section {
+		&__title {
+			font-size: 3rem;
+		}
+		&__info {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.section {
+		&__title {
+			font-size: 3.5rem;
 		}
 	}
 }
