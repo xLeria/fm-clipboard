@@ -1,5 +1,55 @@
+@use 'variables' as *;
+
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
+}
+
+.download {
+	width: 100%;
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	gap: 1.1em;
+
+	&__btn {
+		padding: 1em 0;
+		border-radius: 50px;
+		color: $pure-white;
+		font-weight: $bold-font-weight;
+		cursor: pointer;
+		transition: background-color 0.3s;
+
+		&--cyan {
+			background-color: $strong-cyan;
+			box-shadow: 0 2px 15px rgba($strong-cyan, 0.5),
+				inset 0px -2px 0px 0px rgba($pure-black, 0.2);
+
+			&:hover {
+				background-color: rgba($strong-cyan, 0.7);
+			}
+		}
+
+		&--blue {
+			background-color: $light-blue;
+			box-shadow: 0 2px 15px rgba($light-blue, 0.5),
+				inset 0px -3px 0px 0px rgba($pure-black, 0.2);
+
+			&:hover {
+				background-color: rgba($light-blue, 0.7);
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.download {
+		flex-direction: row;
+		justify-content: center;
+
+		&__btn {
+			padding: 0.9em 2em;
+		}
+	}
 }
