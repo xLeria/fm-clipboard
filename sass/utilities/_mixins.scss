@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+@mixin headingAndInfo {
+	&__heading {
+        margin-bottom: 0.8em;
+        color: $dark-grayish-blue;
+        font-size: 2.3rem;
+	}
+    &__title{
+		padding: 1em 0;
+		font-size: 1.6rem;
+		line-height: 1.5em;
+    }
+}
