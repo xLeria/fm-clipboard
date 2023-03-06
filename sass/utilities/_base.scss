@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: {
+		image: url('../images/bg-header-mobile.png');
+		size: contain;
+		repeat: no-repeat;
+	}
+	font: {
+		family: 'Bai Jamjuree', sans-serif;
+		size: $body-font-size;
+		weight: $regular-font-weight;
+	}
+	color: $grayish-blue;
+}
