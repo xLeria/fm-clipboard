@@ -143,7 +143,6 @@ body {
   }
 }
 .header {
-  margin-bottom: 5.9em;
   padding: 1.8em;
   min-height: 70vh;
 }
@@ -174,7 +173,7 @@ body {
           align-items: center;
 }
 .section-services .services-box .services-img {
-  margin: 2em 0;
+  margin: 3em 0;
 }
 .section-services .services-box .services {
   display: -webkit-box;
@@ -196,10 +195,51 @@ body {
   line-height: 1.5em;
 }
 
+.section-services {
+  margin: 6em 0;
+}
+
+.section-workflow .workflow-box {
+  margin: 4em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3em;
+}
+.section-workflow .workflow-box .workflow__icon {
+  margin-bottom: 2em;
+}
+.section-workflow .workflow-box .workflow__title {
+  color: rgb(76, 84, 93);
+  font-size: 2.3rem;
+}
+.section-workflow .workflow-box .workflow__info {
+  max-width: 400px;
+  padding: 0.6em 0;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+.section-sponsors .sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2em;
+}
+
+.section-download {
+  margin: 6em 0;
+}
+
 @media (min-width: 576px) {
-  .header {
-    margin-bottom: 0;
-  }
   .header__title {
     font-size: 4rem;
   }
@@ -213,10 +253,36 @@ body {
     max-width: 400px;
     font-size: 1.8rem;
   }
+  .section-workflow .workflow-box .workflow__title {
+    font-size: 2.6rem;
+  }
+  .section-workflow .workflow-box .workflow__info {
+    font-size: 1.8rem;
+  }
+  .section-sponsors .sponsors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media (min-width: 768px) {
   .header__title {
     font-size: 4.5rem;
+  }
+  .section-workflow .workflow-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 @media (min-width: 992px) {

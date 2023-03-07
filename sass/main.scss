@@ -1,7 +1,7 @@
 @use 'utilities' as *;
 
+// Header
 .header {
-	margin-bottom: 5.9em;
 	padding: 1.8em;
 	min-height: 70vh;
 
@@ -22,13 +22,14 @@
 	}
 }
 
+// Services
 .section-services {
 	.services-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		.services-img {
-			margin: 2em 0;
+			margin: 3em 0;
 		}
 		.services {
 			display: flex;
@@ -51,10 +52,54 @@
 	}
 }
 
+// Access
+.section-services {
+	margin: 6em 0;
+}
+
+// Workflow
+.section-workflow {
+	.workflow-box {
+		margin: 4em 0;
+		display: flex;
+		flex-direction: column;
+		gap: 3em;
+
+		.workflow {
+			&__icon {
+				margin-bottom: 2em;
+			}
+
+			&__title {
+				color: $dark-grayish-blue;
+				font-size: 2.3rem;
+			}
+
+			&__info {
+				max-width: 400px;
+				padding: 0.6em 0;
+				font-size: 1.6rem;
+				line-height: 1.5em;
+			}
+		}
+	}
+}
+
+// Sponsors
+.section-sponsors {
+	.sponsors {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2em;
+	}
+}
+
+.section-download {
+	margin: 6em 0;
+}
+
 @media (min-width: 576px) {
 	.header {
-		margin-bottom: 0;
-
 		&__title {
 			font-size: 4rem;
 		}
@@ -73,11 +118,34 @@
 					}
 
 					&__info {
-                        max-width: 400px;
+						max-width: 400px;
 						font-size: 1.8rem;
 					}
 				}
 			}
+		}
+	}
+
+	.section-workflow {
+		.workflow-box {
+			.workflow {
+				&__title {
+					font-size: 2.6rem;
+				}
+
+				&__info {
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+
+	.section-sponsors {
+		.sponsors {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
 		}
 	}
 }
@@ -87,25 +155,29 @@
 			font-size: 4.5rem;
 		}
 	}
+
+	.section-workflow {
+		.workflow-box {
+			flex-direction: row;
+		}
+	}
 }
 
 @media (min-width: 992px) {
-
-    .section-services {
+	.section-services {
 		.services-box {
-            margin: 2em 0;
+			margin: 2em 0;
 			flex-direction: row;
-            gap: 2em;
+			gap: 2em;
 
 			.services-img {
-                min-width: 50%;
+				min-width: 50%;
 			}
 			.services {
-                text-align: left;
+				text-align: left;
 				.service {
-
 					&__info {
-                        font-size: 1.6rem;
+						font-size: 1.6rem;
 					}
 				}
 			}
@@ -114,19 +186,16 @@
 }
 
 @media (min-width: 1200px) {
-
-    .section-services {
+	.section-services {
 		.services-box {
-            gap: 5em;
+			gap: 5em;
 			.services {
 				.service {
-
 					&__info {
-                        font-size: 1.8rem;
+						font-size: 1.8rem;
 					}
 				}
 			}
 		}
-	
-}
+	}
 }
