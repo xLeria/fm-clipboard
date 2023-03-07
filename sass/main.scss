@@ -24,6 +24,7 @@
 
 // Services
 .section-services {
+	margin: 6em 0;
 	.services-box {
 		display: flex;
 		flex-direction: column;
@@ -53,12 +54,15 @@
 }
 
 // Access
-.section-services {
-	margin: 6em 0;
+.section-access {
+	.access-img {
+		margin-top: 2em;
+	}
 }
 
 // Workflow
 .section-workflow {
+	margin-top: 2em;
 	.workflow-box {
 		margin: 4em 0;
 		display: flex;
@@ -94,8 +98,56 @@
 	}
 }
 
+// Downlaod
 .section-download {
-	margin: 6em 0;
+	margin: 6em auto;
+}
+
+// Footer
+.footer {
+	width: 100%;
+	background-color: rgba($grayish-blue, 0.2);
+
+	.footer-box{
+		padding: 3em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3em;
+
+		.footer-logo{
+			width: 3em;
+		}
+
+		.footer-nav{
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			
+			&__link{
+				color: $dark-grayish-blue;
+				transition: color .3s;
+
+				&:hover{
+					color: $strong-cyan;
+				}
+			}
+		}
+
+		.footer-socials{
+			display: flex;
+			gap: 2em;
+
+			&__icon{
+				fill: $dark-grayish-blue;
+				transition: fill .3s;
+
+				&:hover{
+					fill: $strong-cyan;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 576px) {
@@ -110,6 +162,7 @@
 	}
 
 	.section-services {
+		margin: 0;
 		.services-box {
 			.services {
 				.service {
@@ -161,6 +214,30 @@
 			flex-direction: row;
 		}
 	}
+
+	.section-access {
+		.access-img {
+			margin-top: 4.8em;
+		}
+	}
+
+	.footer {
+		.footer-box{
+			flex-direction: row;
+			justify-content: space-between;
+		
+			.footer-nav{
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				text-align-last: left;
+
+				&__link{
+					min-width: 120px;
+				}
+			}
+		}
+	}
+
 }
 
 @media (min-width: 992px) {

@@ -160,6 +160,9 @@ body {
   line-height: 1.5em;
 }
 
+.section-services {
+  margin: 6em 0;
+}
 .section-services .services-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,10 +198,13 @@ body {
   line-height: 1.5em;
 }
 
-.section-services {
-  margin: 6em 0;
+.section-access .access-img {
+  margin-top: 2em;
 }
 
+.section-workflow {
+  margin-top: 2em;
+}
 .section-workflow .workflow-box {
   margin: 4em 0;
   display: -webkit-box;
@@ -236,7 +242,61 @@ body {
 }
 
 .section-download {
-  margin: 6em 0;
+  margin: 6em auto;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgba(159, 171, 178, 0.2);
+}
+.footer .footer-box {
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
+}
+.footer .footer-box .footer-logo {
+  width: 3em;
+}
+.footer .footer-box .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+.footer .footer-box .footer-nav__link {
+  color: rgb(76, 84, 93);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.footer .footer-box .footer-nav__link:hover {
+  color: rgb(38, 186, 164);
+}
+.footer .footer-box .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+.footer .footer-box .footer-socials__icon {
+  fill: rgb(76, 84, 93);
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.footer .footer-box .footer-socials__icon:hover {
+  fill: rgb(38, 186, 164);
 }
 
 @media (min-width: 576px) {
@@ -245,6 +305,9 @@ body {
   }
   .header__info {
     font-size: 1.8rem;
+  }
+  .section-services {
+    margin: 0;
   }
   .section-services .services-box .services .service__title {
     font-size: 2.6rem;
@@ -283,6 +346,27 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .section-access .access-img {
+    margin-top: 4.8em;
+  }
+  .footer .footer-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer-box .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+  .footer .footer-box .footer-nav__link {
+    min-width: 120px;
   }
 }
 @media (min-width: 992px) {
